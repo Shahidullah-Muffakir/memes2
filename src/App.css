@@ -14,19 +14,25 @@ body {
   font-family: 'Outfit', sans-serif;
   background-color: #080B1A;
 }
-body{
-  overflow-y: hidden;
+
+body {
+
   @media screen and (min-width: 768px) {
     width: 100vw;
-    height: 100vh;
+    max-height: 100vh;
+      overflow-y: hidden;
+
   }
 
 
 }
+
 .homeMainContainer {
+  position: relative;
   @media screen and (max-width: 768px) {
     padding: 50px 0 25px 25px;
   }
+
   @media screen and (min-width: 768px) {
     width: 90%;
     padding-left: 331px;
@@ -42,27 +48,29 @@ img {
 }
 
 .heroSectionMobile {
-  .topSection{
+  .topSection {
     @media screen and (min-width: 769px) {
       display: flex;
       width: 100%;
       align-items: center;
       flex-direction: row;
       gap: 15px;
-      .rightDesktop{
+
+      .rightDesktop {
         order: 2;
         position: absolute;
-       left: 734px;
+        left: 734px;
         top: 200px;
         width: 650px;
         right: 0;
         /* z-index: -1; */
-     
+
       }
     }
 
   }
-  .rightDesktop{
+
+  .rightDesktop {
     @media screen and (max-width: 769px) {
       display: none;
     }
@@ -71,7 +79,8 @@ img {
   .right {
     height: 33vh;
     padding-left: 41px;
-    @media screen and (min-width: 768px){
+
+    @media screen and (min-width: 768px) {
       display: none
     }
   }
@@ -95,7 +104,7 @@ img {
     .leftTopImg {
       display: flex;
       gap: 15px;
-      
+
       align-items: center;
       justify-content: flex-start;
       font-size: 14px;
@@ -141,6 +150,7 @@ img {
     margin-top: 60px;
     padding-right: 25px;
     z-index: 11;
+
     @media screen and (min-width: 768px) {
       max-width: 778px;
       margin-top: 100px;
@@ -180,20 +190,32 @@ img {
     li {
       display: inline;
       margin: 0 15px;
+
+      @media screen and (max-width: 768px) {
+        &:nth-child(1) {
+          margin-left: 0;
+        }
+      }
+
     }
   }
 
   img {
     width: 64px;
     height: 15px;
+
     @media screen and (min-width: 768px) {
       z-index: 99999;
       position: absolute;
-      right: 290px;
-    }
- 
+      right: 18%;
 
-   
+    }
+    @media screen and (max-width: 1166px) {
+      right: 5px;
+    }
+
+
+
   }
 
 
