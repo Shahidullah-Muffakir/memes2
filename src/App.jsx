@@ -9,14 +9,16 @@ import Policy from './Policy';
 
 function App() {
   return (
-    <Router>  {/* ✅ Wrap everything inside Router */}
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/terms" element={<TermsOfService />} />
-        <Route path="/policy" element={<Policy/>} />
+    <div className="app">
+      <Router>  {/* ✅ Wrap everything inside Router */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/terms" element={<TermsOfService />} />
+          <Route path="/policy" element={<Policy />} />
 
-      </Routes>
-    </Router>
+        </Routes>
+      </Router>
+    </div>
   );
 }
 
