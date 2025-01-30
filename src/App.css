@@ -15,8 +15,13 @@ body {
   background-color: #080B1A;
 }
 body{
-  width: 100vw;
-  height: 100vh;
+  overflow-y: hidden;
+  @media screen and (min-width: 768px) {
+    width: 100vw;
+    height: 100vh;
+  }
+
+
 }
 .homeMainContainer {
   @media screen and (max-width: 768px) {
@@ -25,6 +30,8 @@ body{
   @media screen and (min-width: 768px) {
     width: 90%;
     padding-left: 331px;
+    padding-top: 148px;
+    padding-bottom: 148px;
 
   }
 }
@@ -35,13 +42,32 @@ img {
 }
 
 .heroSectionMobile {
-  @media screen and (min-width: 769px) {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    flex-direction: row;
-    
+  .topSection{
+    @media screen and (min-width: 769px) {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      flex-direction: row;
+      gap: 15px;
+      .rightDesktop{
+        order: 2;
+        position: absolute;
+       left: 734px;
+        top: 200px;
+        width: 650px;
+        right: 0;
+        /* z-index: -1; */
+     
+      }
+    }
+
   }
+  .rightDesktop{
+    @media screen and (max-width: 769px) {
+      display: none;
+    }
+  }
+
   .right {
     height: 33vh;
     padding-left: 41px;
@@ -49,17 +75,7 @@ img {
       display: none
     }
   }
-  .rightDesktop{
-    @media screen and (max-width: 769px) {
-      display: none;
-    }
-    img{
-      height: 800px;
-    }
 
-    
-
-  }
 
   .left {
     /* margin-top: 20px; */
@@ -79,6 +95,7 @@ img {
     .leftTopImg {
       display: flex;
       gap: 15px;
+      
       align-items: center;
       justify-content: flex-start;
       font-size: 14px;
@@ -123,6 +140,11 @@ img {
     color: #FFFFFF99;
     margin-top: 60px;
     padding-right: 25px;
+    z-index: 11;
+    @media screen and (min-width: 768px) {
+      max-width: 778px;
+      margin-top: 100px;
+    }
   }
 
   display: flex;
@@ -143,6 +165,7 @@ img {
   color: #FFFFFF;
   padding-top: 25px;
   padding-right: 25px;
+  z-index: 12;
 
   ul {
     display: flex;
@@ -150,6 +173,9 @@ img {
     align-items: center;
     list-style: none;
     padding: 0;
+    @media screen and (min-width: 768px) {
+      margin-left: -13px;
+    }
 
     li {
       display: inline;
@@ -160,12 +186,21 @@ img {
   img {
     width: 64px;
     height: 15px;
+    @media screen and (min-width: 768px) {
+      z-index: 99999;
+      position: absolute;
+      right: 290px;
+    }
+ 
+
+   
   }
 
 
   a {
     color: white;
     text-decoration: none;
+
   }
 
   a:hover {
