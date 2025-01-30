@@ -7,8 +7,8 @@ const Footer = () => {
       <nav>
         <ul>
           <li><Link to="/terms">Terms of Service</Link></li>
-          <li><Link to="/privacy">Privacy Policy</Link></li>
-          <li><Link to="/support">Support</Link></li>
+          <li><Link to="/policy">Privacy Policy</Link></li>
+          <li><a href="mailto:support@memes.gg">Support</a></li>
         </ul>
       </nav>
       <div className="footerImage">
