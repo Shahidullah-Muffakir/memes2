@@ -32,8 +32,10 @@ const Home = () => {
                             </div>
                         </div>
                         <div className='downloadBtn'>
-                            <img src={downloadbtn} alt="" />
+                            <a href="https://apps.apple.com/app/id6475736639" target="_blank" rel="noopener noreferrer">
+                            <img src={downloadbtn} alt="App Store" />
 
+                            </a>
                         </div>
 
                     </div>
