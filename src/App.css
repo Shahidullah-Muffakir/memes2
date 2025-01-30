@@ -62,7 +62,9 @@ body {
     /* flex-direction: column; */
     /* align-items: center;  */
    /* justify-content: center; */
-
+   @media screen and (min-width:1441px) {
+    padding-left: 250px;
+   }
   }
 }
 
@@ -88,6 +90,10 @@ img {
         width: 650px;
         right: 0;
         /* z-index: -1; */
+        @media screen and (min-width:1441px) {
+          left: 580px;
+
+        }
 
       }
     }
