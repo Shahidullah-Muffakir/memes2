@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap');
+
+/* reset.css - A simple CSS reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'Outfit', sans-serif;
+  background-color: #080B1A;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+}
+.homeMainContainer {
+  @media screen and (max-width: 768px) {
+    padding: 50px 0 25px 25px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 90%;
+    padding-left: 331px;
+
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.heroSectionMobile {
+  @media screen and (min-width: 769px) {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: row;
+    
+  }
+  .right {
+    height: 33vh;
+    padding-left: 41px;
+    @media screen and (min-width: 768px){
+      display: none
+    }
+  }
+  .rightDesktop{
+    @media screen and (max-width: 769px) {
+      display: none;
+    }
+    img{
+      height: 800px;
+    }
+
+    
+
+  }
+
+  .left {
+    /* margin-top: 20px; */
+    font-family: 'Outfit', sans-serif;
+    font-size: 40.37px;
+    font-weight: 600;
+    line-height: 48.44px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+
+    .leftTopImg {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      justify-content: flex-start;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 17.64px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: #FFFFFFCC;
+
+      img {
+        width: 45px;
+        height: 45px;
+      }
+
+    }
+
+
+
+    .leftHeaderSub {
+      display: flex;
+      gap: 10px;
+
+      img {
+        width: 90px;
+      }
+    }
+
+    .downloadBtn {
+      width: 120px;
+    }
+  }
+
+  .footerFirst {
+    font-family: 'Outfit', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15.12px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFFFFF99;
+    margin-top: 60px;
+    padding-right: 25px;
+  }
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 15.12px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #FFFFFF;
+  padding-top: 25px;
+  padding-right: 25px;
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+
+    li {
+      display: inline;
+      margin: 0 15px;
+    }
+  }
+
+  img {
+    width: 64px;
+    height: 15px;
+  }
+
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
