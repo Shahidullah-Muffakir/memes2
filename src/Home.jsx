@@ -4,7 +4,7 @@ import iconsmall from './assets/iconsmall.png';
 import aistarmobile from './assets/aistarmobile.png';
 import downloadbtn from './assets/downloadbtn.png';
 import Footer from './Footer';
-import { useEffect , useState} from 'react';
+import {  useLayoutEffect, useState} from 'react';
 const Home = () => {
     const [styles, setStyles] = useState({ transform: 'scale(1)'});
 
@@ -22,7 +22,7 @@ const Home = () => {
         }
     };
 
-    useEffect(() => {
+    useLayoutEffect(() => {
         updateStyles(); // Apply styles on mount
         window.addEventListener('resize', updateStyles); // Update on resize
 
