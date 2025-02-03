@@ -77,6 +77,14 @@ body {
     margin-left: 20vw;
 
   }
+  @media screen and (min-width: 2000px) {
+    /* position: absolute;
+    top: calc(12vh * (100vw / 2000));
+    transform: scale(calc(1.7 * (100vw / 2000)));
+    transform-origin: top left; */
+    margin-left: 25vw;
+
+  }
 }
 
 img {
