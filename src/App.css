@@ -55,16 +55,27 @@ body {
     width: 100%;
     max-width: 1440px;
     padding-left: 300px;
-    padding-top: 148px;
+    padding-top: 120px;
     padding-bottom: 148px;
     display: flex;
+    /* margin-left: 10vw; */
+    /* transform: scale(1.07);; */
     /* margin-left: 10vw; */
     /* flex-direction: column; */
     /* align-items: center;  */
    /* justify-content: center; */
    @media screen and (min-width:1441px) {
     padding-left: 250px;
+    /* margin-left: 20vw; */
    }
+  }
+  @media screen and (min-width: 1500px) {
+    /* position: absolute;
+    top: calc(12vh * (100vw / 2000));
+    transform: scale(calc(1.7 * (100vw / 2000)));
+    transform-origin: top left; */
+    margin-left: 20vw;
+
   }
 }
 
@@ -86,7 +97,7 @@ img {
         order: 2;
         position: absolute;
         left: 734px;
-        top: 200px;
+        top: 170px;
         width: 650px;
         right: 0;
         /* z-index: -1; */
@@ -119,7 +130,7 @@ img {
   .left {
 
     font-family: 'Outfit', sans-serif;
-    font-size: 40.37px;
+   font-size: 54px;
     font-weight: 600;
     line-height: 48.44px;
     text-align: left;
@@ -132,6 +143,7 @@ img {
     gap: 30px;
     @media screen and (max-width: 768px) {
       margin-top: 40px;
+      font-size: 40.37px;
     }
 
     .leftTopImg {
@@ -149,8 +161,8 @@ img {
       color: #FFFFFFCC;
 
       img {
-        width: 45px;
-        height: 45px;
+        width: 64px;
+        height: 64px;
       }
 
     }
@@ -170,6 +182,9 @@ img {
 
     .downloadBtn {
       width: 120px;
+      @media screen and (min-width: 768px) {
+        margin-top: 26px;
+      }
     }
   }
 

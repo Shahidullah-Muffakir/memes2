@@ -4,7 +4,24 @@ import iconsmall from './assets/iconsmall.png';
 import aistarmobile from './assets/aistarmobile.png';
 import downloadbtn from './assets/downloadbtn.png';
 import Footer from './Footer';
+import { useEffect } from 'react';
 const Home = () => {
+    useEffect(() => {
+        const baseWidth = 2000;  // Reference width
+        const baseScale = 1.6;   // Scale at 2000px
+        const baseTop = 16;      // Top at 2000px in vh
+
+        let screenWidth = window.innerWidth;
+        console.log('screenwidth333', screenWidth)
+        let scaleFactor = (screenWidth / baseWidth) * baseScale;
+        let topValue = (screenWidth / baseWidth) * baseTop;
+
+        const mainContainer = document.querySelector('.homeMainContainer');
+        if (mainContainer && screenWidth > 1500) {
+            mainContainer.style.transform = `scale(${scaleFactor})`;
+            mainContainer.style.top = `${topValue}vh`;
+        }
+    }, []);
     return (
         <div className="homeMainContainer">
             <div className="heroSectionMobile">
