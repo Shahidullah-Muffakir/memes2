@@ -10,17 +10,30 @@
     flex-direction: column;
     justify-content: flex-start;
 
-    /* overflow-y: auto; */
+    @media screen and (max-width: 1000px) {
+        scrollbar-width: none;
+        /* Firefox */
+        -ms-overflow-style: none;
+        /* IE/Edge */
+        overflow-y: auto;
+    }
 
-.supportContainerContent{
-display: flex;
-align-items: center;
-flex-direction: column;
-justify-content: flex-start;
-}
+
+    &:-webkit-scrollbar {
+        display: none;
+        /* Chrome, Safari */
+    }
+
+    .supportContainerContent {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
     max-width: 1440px;
     margin: auto;
-    
+
 
     * {
         margin: 0;
