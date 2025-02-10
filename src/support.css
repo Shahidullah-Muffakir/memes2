@@ -10,7 +10,7 @@
     flex-direction: column;
     justify-content: flex-start;
 
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 1440px) {
         scrollbar-width: none;
         /* Firefox */
         -ms-overflow-style: none;
