@@ -12,7 +12,7 @@ const Support = () => {
         const basePaddingBottom = 200.5;
         const basePaddingLeft = 333;
         const basePaddingRight = 333;
-        const baseScale = 1.6
+        const baseScale = 1
 
         let screenWidth = window.innerWidth;
         let scaleFactor = (screenWidth / baseWidth) * baseScale;
