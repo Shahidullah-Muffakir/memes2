@@ -52,7 +52,7 @@ const Support = () => {
                     <p className='support'>Support</p>
                     <p className='needHelp'>Need help?</p>
                     <button className='contactUsBtn'>
-                        <a href="">Contact us</a>
+                        <a href="mailto:support@memes.gg">Contact us</a>
                     </button>
                     <p className='footerText'>Memes.gg is not an exchange and does not provide investment advice. The content of this app is not investment advice and does not constitute any odder or solicitation to offer or recommendation of any product or service. Memes.gg is a visual interface to blockchain decentralized exchanges and does not directly exchange, develop, create, maintain, or endorse any cryptocurrencies.</p>
                     <div className="footerBottom">
