@@ -8,7 +8,9 @@ const Footer = () => {
         <ul>
           <li><Link to="/terms">Terms of Service</Link></li>
           <li><Link to="/policy">Privacy Policy</Link></li>
-          <li><a href="mailto:support@memes.gg">Support</a></li>
+          {/* <li><a href="mailto:support@memes.gg">Support</a></li> */}
+          <li><Link to="/support">Support</Link></li>
+
         </ul>
       </nav>
       <div className="footerImage">

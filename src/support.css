@@ -1,0 +1,111 @@
+.mainContainer {
+    width: 100vw;
+    height: 100vh;
+    background-color: #080B1A;
+    padding: 200.5px 333px;
+    font-family: 'Outfit', sans-serif;
+    color: #FFFFFF !important;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+
+  
+          max-width: 1440px;
+          margin: auto;
+        
+      
+      
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 50px 25px 25px 25px;
+    }
+
+
+    .support {
+        margin-bottom: 93px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0%;
+    }
+
+    .needHelp {
+        font-weight: 600;
+        font-size: 54.3px;
+        line-height: 65.16px;
+        letter-spacing: 0%;
+        margin-bottom: 93px;
+
+    }
+
+    .contactUsBtn {
+        background: #FF7A59;
+        width: 122;
+        height: 39;
+        border-radius: 10px;
+        gap: 3.34px;
+        padding-top: 10px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        margin-bottom: 100px;
+        border: none;
+
+        @media screen and (max-width: 768px) {
+            margin-bottom: 166px;
+        }
+
+        a {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 19.2px;
+            letter-spacing: 3%;
+            text-align: center;
+            color: white;
+            text-decoration: none;
+
+        }
+
+    }
+
+    .footerText {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15.12px;
+        letter-spacing: 0px;
+        margin-bottom: 25px;
+        color: #FFFFFF99;
+        margin-bottom: 25px;
+
+
+    }
+
+    .footerBottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        nav{
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            align-items: center;
+        }
+
+            a {
+
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 15.12px;
+                letter-spacing: 0px;
+                color: white;
+                text-decoration: none;
+
+        }
+    }
+}
