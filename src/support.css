@@ -9,13 +9,17 @@
     align-items: center;
     flex-direction: column;
     justify-content: flex-start;
+    /* overflow-y: auto; */
 
-  
-          max-width: 1440px;
-          margin: auto;
-        
-      
-      
+
+    max-width: 1440px;
+    margin: auto;
+
+    @media screen and (min-width: 1200px) and (max-width: 1440px) {
+        overflow-y: auto;
+    }
+    
+
     * {
         margin: 0;
         padding: 0;
@@ -90,21 +94,22 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        nav{
+
+        nav {
             display: flex;
             align-items: center;
             gap: 16px;
             align-items: center;
         }
 
-            a {
+        a {
 
-                font-weight: 600;
-                font-size: 12px;
-                line-height: 15.12px;
-                letter-spacing: 0px;
-                color: white;
-                text-decoration: none;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 15.12px;
+            letter-spacing: 0px;
+            color: white;
+            text-decoration: none;
 
         }
     }
