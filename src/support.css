@@ -10,7 +10,7 @@
     flex-direction: column;
     justify-content: flex-start;
 
-    /* overflow-y: auto; */
+    overflow-y: auto;
 
 .supportContainerContent{
 display: flex;
@@ -20,10 +20,6 @@ justify-content: flex-start;
 }
     max-width: 1440px;
     margin: auto;
-
-    @media screen and (min-width: 1200px) and (max-width: 1440px) {
-        overflow-y: auto;
-    }
     
 
     * {
